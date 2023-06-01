@@ -3,35 +3,62 @@
   <head>
     <title>Minimalist Website</title>
     <style>
-      @font-face {
-        font-family: "Josefin Sans", sans-serif;
-        src: url("JosefinSans-VariableFont_wght.ttf") format("woff2");
-        font-weight: normal;
-        font-style: normal;
-      }
 
+	  @font-face {
+        font-family: "Comforta";
+        src: url("fonts/Comfortaa-Light.ttf") format("woff2");
+		font-weight: 300;
+		font-style: normal;
+      }
+	  
+	  @font-face {
+        font-family: "Comforta";
+        src: url("fonts/Comfortaa-Regular.ttf") format("woff2");
+		font-weight: 500;
+		font-style: normal;
+      }
+	  
+	  @font-face {
+        font-family: "Comforta";
+        src: url("fonts/Comfortaa-Bold.ttf") format("woff2");
+		font-weight: 700;
+		font-style: normal;
+      }
+	  
+	  @font-face {
+        font-family: "Retro";
+        src: url("fonts/Retro_Stereo_Wide.ttf") format("woff2");
+      }
+	  
       body {
-        background-color: #f5f5dc;
+		background-image: url('background.png');
         text-align: center;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "Comforta";
       }
 
       .container {
-        max-width: 600px;
-        margin: 0 auto;
+		align-items: center;
         padding: 20px;
+		display: flex;
+		flex-direction: column;
       }
 
       h1 {
-        font-size: 48px;
+		font-family: "Retro";
+        font-size: 64px;
         font-weight: 500;
-        margin-bottom: 10px;
+        margin: 0;
       }
+	  
+	  p {
+		margin: 0;
+	  }
 
       .description {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
         margin-bottom: 20px;
+		max-width: 1000px;
       }
 
       .disclaimer {
@@ -40,7 +67,7 @@
       }
 
       img {
-        max-width: 100%;
+        max-width: 1200px;
         height: auto;
         margin-bottom: 20px;
       }
@@ -48,10 +75,12 @@
   </head>
   <body>
     <div class="container">
-      <h1>ALA BALA</h1>
-      <p class="description">Tutuua dawj pawoeia adkjae ii awodha d</p>
-      <img src="image.jpg" alt="Image" />
-      <p class="disclaimer">Ipoid lkawdlka daw wiiii</p>
+      <h1>by Cicero </h1>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  <a href="image.jpg" target="_blank">
+		<img src="image.jpg" alt="Image" />
+	  </a>
+      <p class="disclaimer">Ipoid lkawdlka daw wiiii @awiod.adw</p>
     </div>
   </body>
 </html>
